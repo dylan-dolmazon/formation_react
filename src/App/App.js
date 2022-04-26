@@ -27,7 +27,9 @@ class App extends React.Component{
         <Button bgColor="skyblue" onButtonClick={()=>{
           this.setState({compteur:this.state.compteur+1})
         }}>+1</Button>
-        <Button bgColor="tomato">-1</Button>
+       {this.state.compteur <= 0 ?null:<Button bgColor="tomato" onButtonClick={()=>{
+         this.setState({compteur: this.state.compteur-1})
+       }}>-1</Button>}
 
       </div>
     );
