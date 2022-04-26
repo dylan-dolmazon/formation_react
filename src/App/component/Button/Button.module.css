@@ -13,3 +13,13 @@
 
     box-shadow: 25px 25px 25px gray;
 }
+
+.hover{
+    border: 1px ridge black;
+    box-shadow: 10px 10px 25px green;
+}
+
+.clicked{
+    border: 1px ridge grey ;
+    box-shadow: 10px 10px 25px gold ;
+}

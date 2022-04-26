@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const Button=(props)=>{
      const [isClicked, setClicked] = useState(false)
+     const [isHover, setHover] = useState(false)
      useEffect(() => {
         console.log("update du state",isClicked);
         if(isClicked){
@@ -11,23 +12,30 @@ const Button=(props)=>{
               setClicked(false);  
             },1000);
         }
-    //    return () => {
-    //      effect
-    //    };
      }, [isClicked])
+     let className=style.Button;
+     if(isClicked){
+         className+=' '+style.clicked;
+     }else if(isHover){
+         className += ' '+style.hover;
+     }
     return (
     <button 
-        className={style.Button} 
+        ///className={`${style.Button}${isHover?' '+style.hover:''}${isClicked?' '+style.clicked:''}`} 
+        className={className}
         style={ {color:props.color, backgroundColor:props.bgColor}}
         onClick={(evt)=>{
             // eslint-disable-next-line no-const-assign
             setClicked(true);
             console.log("value de isClicked",isClicked);
         }}
+        onMouseEnter={()=>{setHover(true)}}
+        onMouseLeave={()=>{setHover(false)}}
         >
         {props.children}
         <br/>
         {isClicked.toString()}
+        
     </button>)
 }
 Button.propTypes={
