@@ -5,8 +5,8 @@ import Button from './component/Button/Button';
 function App() {
   return (
     <div>
-      <Button color="magenta" text="Mon bouton"/>
-      <Button bgColor="skyblue">Un bouton</Button>
+      <Button color="magenta" text="Mon button"/>
+      <Button bgColor="skyblue">Un button</Button>
       <Button>
         <img src="http://www.exempledesiteweb.com/image.jpg" alt="exemple de texte alternatif"/>
         <div>hello</div>
