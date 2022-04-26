@@ -9,7 +9,7 @@ class App extends React.Component{
       <div className="App" data-testid="App">
         <div>Valeur du compteur : {this.compteur}</div>
 
-        <Button bgColor="skyblue">+1</Button>
+        <Button bgColor="skyblue" onButtonClick={()=>{alert('le bouton est click'+ ': ' + this.compteur)}}>+1</Button>
         <Button bgColor="tomato">-1</Button>
 
       </div>

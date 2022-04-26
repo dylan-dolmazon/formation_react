@@ -28,6 +28,7 @@ const Button=(props)=>{
             // eslint-disable-next-line no-const-assign
             setClicked(true);
             console.log("value de isClicked",isClicked);
+            props.onButtonClick();
         }}
         onMouseEnter={()=>{setHover(true)}}
         onMouseLeave={()=>{setHover(false)}}
@@ -41,10 +42,12 @@ const Button=(props)=>{
 Button.propTypes={
     bgColor: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
+    onButtonClick: PropTypes.func.isRequired,
 }
 
 Button.defaultProps={
     bgColor:'orange',
+    color:'grey',
 }
 
 export default Button;
