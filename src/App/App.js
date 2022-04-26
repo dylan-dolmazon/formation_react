@@ -1,18 +1,21 @@
 import React from 'react';
-import './App.css';
 import Button from './component/Button/Button';
+import './App.css'
 
-function App() {
-  return (
-    <div>
-      <Button color="magenta" text="Mon button"/>
-      <Button bgColor="skyblue">Un button</Button>
-      <Button>
-        <img src="http://www.exempledesiteweb.com/image.jpg" alt="exemple de texte alternatif"/>
-        <div>hello</div>
-      </Button>
-    </div>
-  );
+class App extends React.Component{
+  compteur=0;
+  render(){
+    return (
+      <div className="App" data-testid="App">
+        <div>Valeur du compteur : {this.compteur}</div>
+
+        <Button bgColor="skyblue">+1</Button>
+        <Button bgColor="tomato">-1</Button>
+
+      </div>
+    );
+  }
+
 }
 
 export default App;
