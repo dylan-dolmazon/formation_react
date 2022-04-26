@@ -6,18 +6,18 @@ const Button=(props)=>{
      const [isClicked, setClicked] = useState(false)
      const [isHover, setHover] = useState(false)
      useEffect(() => {
-        console.log("update du state",isClicked);
+        console.log("update du state",isClicked)
         if(isClicked){
             setTimeout(()=>{
-              setClicked(false);  
-            },1000);
+              setClicked(false)
+            },1000)
         }
      }, [isClicked])
-     let className=style.Button;
+     let className=style.Button
      if(isClicked){
-         className+=' '+style.clicked;
+         className+=' '+style.clicked
      }else if(isHover){
-         className += ' '+style.hover;
+         className += ' '+style.hover
      }
     return (
     <button 
@@ -26,9 +26,9 @@ const Button=(props)=>{
         style={ {color:props.color, backgroundColor:props.bgColor}}
         onClick={(evt)=>{
             // eslint-disable-next-line no-const-assign
-            setClicked(true);
-            console.log("value de isClicked",isClicked);
-            props.onButtonClick();
+            setClicked(true)
+            console.log("value de isClicked",isClicked)
+            props.onButtonClick()
         }}
         onMouseEnter={()=>{setHover(true)}}
         onMouseLeave={()=>{setHover(false)}}
@@ -50,4 +50,4 @@ Button.defaultProps={
     color:'grey',
 }
 
-export default Button;
+export default Button
