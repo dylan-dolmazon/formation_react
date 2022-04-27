@@ -5,7 +5,7 @@ import style from './MemeSvgViewer'
 const MemeSvgViewer = (props) => {
   return (
     <svg className={style.MemeSvgViewer} data-testid="MemeSvgViewer" viewBox={`0 0 ${props.image?props.image.w:1000} ${props.image?props.image.h:1000}`}>
-      {/*  {props.image?<image href={`/img/${props.image.url}`} x={0} y={0}/>:null} */}
+      {/* {props.image?<image href={`/img/${props.image.url}`} x={0} y={0}/>:null} */}
       {props.image&&<image href={`/img/${props.image.url}`} x={0} y={0}/>}
       <text 
         x={props.meme.x} 

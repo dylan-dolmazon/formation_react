@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import MemeSvgViewer from './component/ui/MemeSvgViewer/MemeSvgViewer'
+import Navbar from './component/ui/Navbar/Navbar'
 import FlexH from './layout/FlexH/FlexH'
 import FlexW from './layout/FlexW/FlexW'
 
@@ -30,9 +31,9 @@ const appInitialState={meme:{
 function App() {
   const [state, setstate] = useState(appInitialState)
   return (
-    <div className='App' style={{height:'95vh'}}>
+    <div className='App' style={{height:'95vh'}}> 
       <div>header</div>
-      <div>header</div>
+      <Navbar/>
       <FlexH>
         <FlexW>
           <MemeSvgViewer 
