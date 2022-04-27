@@ -1,0 +1,39 @@
+{
+  "memes": [
+    {
+      "id": 0,
+      "text": "Le react c est cool",
+      "x": 20,
+      "y": 20,
+      "fonSize": 20,
+      "fontWeight": "900",
+      "color": "#FFFF",
+      "imageId": 0,
+      "underline": true,
+      "italic": false,
+      "name": "mon 1ier meme"
+    },
+    {
+      "text": "Le js c est la vie",
+      "x": 20,
+      "y": 20,
+      "fonSize": 20,
+      "fontWeight": "900",
+      "color": "#FFFF",
+      "imageId": 1,
+      "underline": true,
+      "italic": false,
+      "name": "mon 1ier meme",
+      "id": 1
+    }
+  ],
+  "images": [
+    {
+      "id": 0,
+      "name": "image",
+      "url": "kb9.jpg",
+      "w": 710,
+      "h": 444
+    }
+  ]
+}
