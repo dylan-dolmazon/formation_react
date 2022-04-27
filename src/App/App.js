@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { REST_ADR, REST_RESSOURCES } from '../config/config'
 import MemeForm from './component/MemeForm/MemeForm'
 import MemeSvgViewer from './component/ui/MemeSvgViewer/MemeSvgViewer'
 import Navbar from './component/ui/Navbar/Navbar'
@@ -24,9 +25,28 @@ const appInitialState={
 
 function App() {
   const [state, setstate] = useState(appInitialState)
+  const isLoadStart=false
   useEffect(() => {
     return () => {
-      fetch('https://localhost:5679/')
+      const promiseMEMES = fetch(`${REST_ADR}${REST_RESSOURCES.MEMES}`,{
+        headers: {Accept: 'application/json'},
+        method: 'GET',
+      })
+      .then(f=>
+        {
+          console.log(f);
+          return f.json()
+        })
+      const promiseIMAGES = fetch(`${REST_ADR}${REST_RESSOURCES.IMAGES}`)
+        .then(f=>
+          {
+            console.log(f);
+            return f.json()
+          })
+          Promise.all([promiseIMAGES,promiseMEMES])
+            .then(tab_promiseObject => {
+              setstate({...state,images:tab_promiseObject[0],memes:tab_promiseObject[1]})
+            })
     };
   }, [])
   return (
