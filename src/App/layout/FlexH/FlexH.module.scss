@@ -1,0 +1,9 @@
+.FlexH {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.FlexH>*:nth-child(1){
+    flex-grow: 1;
+}
