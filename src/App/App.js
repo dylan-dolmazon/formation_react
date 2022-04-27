@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import MemeSvgViewer from './component/ui/MemeSvgViewer/MemeSvgViewer'
 import FlexH from './layout/FlexH/FlexH'
 import FlexW from './layout/FlexW/FlexW'
 
@@ -10,16 +11,18 @@ const appInitialState={meme:{
   fontWeight:'900',
   color:'#FFFF',
   imageId:0,
+  underline:true,
+  italic:false,
   name:'mon 1ier meme'
 
   },
-  images:[
+  image:[
     {
       id:0,
       name:'image',
-      url:'',
-      w:1280,
-      h:720
+      url:'kb9.jpg',
+      w:710,
+      h:444
     }
   ]
 }
@@ -32,6 +35,10 @@ function App() {
       <div>header</div>
       <FlexH>
         <FlexW>
+          <MemeSvgViewer 
+            meme={state.meme} 
+            image={ state.image.find((img) => img.id === state.meme.imageId)}
+          />
           <div>Viewer</div>
           <div>Editor</div>
         </FlexW>
