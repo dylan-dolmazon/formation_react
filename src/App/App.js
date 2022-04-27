@@ -41,7 +41,13 @@ function App() {
             meme={state.meme} 
             image={ state.image.find((img) => img.id === state.meme.imageId)}
           />
-          <MemeForm/>
+          <MemeForm
+            meme={state.meme} 
+            images={ state.image}
+            onFormChange={(newMeme)=>{
+              setstate({...state,meme:newMeme})
+            }}
+          />
           <div>Editor</div>
         </FlexW>
       </FlexH>
