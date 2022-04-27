@@ -20,6 +20,26 @@
       "customTemplates":{
         "component": "grc/class/TemplateName.js"
       }
+    },
+    "funcHook": {
+      "path": "src/app/component",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": true,
+      "withLazy": false,
+      "customTemplates":{
+        "component": "grc/function/TemplateName.js"
+      }
+    },
+    "layoutFunc": {
+      "path": "src/app/layout",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": true,
+      "withLazy": false,
+      "customTemplates":{
+        "component": "grc/class/TemplateName.js"
+      }
     }
   }
 }

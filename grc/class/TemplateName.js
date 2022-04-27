@@ -18,10 +18,8 @@ class TemplateName extends Component {
     }
 }
 
-TemplateName.propTypes = {
-}
+TemplateName.propTypes = {}
 
-TemplateName.defaultProps={
-}
+TemplateName.defaultProps={}
 
 export default TemplateName
