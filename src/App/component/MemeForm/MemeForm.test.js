@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import MemeForm from './MemeForm';
+import MemeForm from './MemeForm(1)';
 
 describe('<MemeForm />', () => {
   test('it should mount', () => {
