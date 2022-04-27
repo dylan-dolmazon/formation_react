@@ -6,7 +6,8 @@ interface ITemplateNameProps {
     style?:object
 }
 
-const TemplateName: React.FunctionComponent<ITemplateNameProps> = (props) => {
+//React.FC<ITemplateNameProps> attribute à props les attributes de ITemplateNameProps
+const TemplateName: React.FC<ITemplateNameProps> = (props) => {
   return (
   <div className={style.TemplateName} date-testid="TemplateName" style={{...props.style}}> 
       {props.children}
