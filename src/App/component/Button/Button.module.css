@@ -1,5 +1,5 @@
 .Button{
-    color: whitesmoke;
+    color: black;
     background-color: tomato;
 
     border-radius: 7px;
@@ -16,10 +16,10 @@
 
 .hover{
     border: 1px ridge black;
-    box-shadow: 10px 10px 25px green;
+    box-shadow: 10px 10px 25px grey;
 }
 
 .clicked{
     border: 1px ridge grey ;
-    box-shadow: 10px 10px 25px gold ;
+    box-shadow: 10px 10px 25px grey ;
 }

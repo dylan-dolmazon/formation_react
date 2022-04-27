@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./MemeForm.module.css";
+import Button  from "../Button/button";
+import styles from "./MemeForm.module.scss";
 
 
 const MemeForm = (props) => {
@@ -68,7 +69,9 @@ const MemeForm = (props) => {
           </div>
         </div>
         <div className={styles.half}>
-         </div>
+          <Button type="submit" bgColor="skyblue">Enregistrer</Button>
+          <Button type="reset" bgColor="tomato">Annuler</Button>
+        </div>
       </form>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import MemeForm from './component/MemeForm/MemeForm'
 import MemeSvgViewer from './component/ui/MemeSvgViewer/MemeSvgViewer'
 import Navbar from './component/ui/Navbar/Navbar'
 import FlexH from './layout/FlexH/FlexH'
@@ -40,7 +41,7 @@ function App() {
             meme={state.meme} 
             image={ state.image.find((img) => img.id === state.meme.imageId)}
           />
-          <div>Viewer</div>
+          <MemeForm/>
           <div>Editor</div>
         </FlexW>
       </FlexH>

@@ -21,6 +21,7 @@ const Button=(props)=>{
      }
     return (
     <button 
+        type={props.type}
         ///className={`${style.Button}${isHover?' '+style.hover:''}${isClicked?' '+style.clicked:''}`} 
         className={className}
         style={ {color:props.color, backgroundColor:props.bgColor}}
@@ -43,11 +44,13 @@ Button.propTypes={
     bgColor: PropTypes.string.isRequired,
     color: PropTypes.string.isRequired,
     onButtonClick: PropTypes.func.isRequired,
+    type: PropTypes.string.isRequired,
 }
 
 Button.defaultProps={
     bgColor:'orange',
     color:'grey',
+    onButtonClick: ()=>{}
 }
 
 export default Button
