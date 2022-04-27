@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "layout-cpm": "npx generate-react-cli c --type=layoutFunc" 
+    "layout-cpm": "npx generate-react-cli c --type=layoutFunc",
+    "navbar": "npx generate-react-cli c --type=uiFunc"
   },
   "eslintConfig": {
     "extends": [

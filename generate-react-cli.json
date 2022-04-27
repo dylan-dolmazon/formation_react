@@ -31,6 +31,16 @@
         "component": "grc/function/TemplateName.js"
       }
     },
+    "uiFunc": {
+      "path": "src/app/component/ui",
+      "withStyle": true,
+      "withTest": true,
+      "withStory": true,
+      "withLazy": false,
+      "customTemplates":{
+        "component": "grc/function/TemplateName.js"
+      }
+    },
     "layoutFunc": {
       "path": "src/app/layout",
       "withStyle": true,
