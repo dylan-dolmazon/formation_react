@@ -4,7 +4,7 @@ import MemeSvgViewer from '../ui/MemeSvgViewer/MemeSvgViewer'
 import style from './Thumbnail.module.scss'
 export const Thumbnail = (props) => {
   return (
-    <div className={style.MemeThumbnail} test-id="MemeThumbnail">
+    <div className={style.Thumbnail} test-id="Thumbnail">
       {props.memes.map((e,i)=> 
         <MemeSvgViewer 
           key={`th${i}`}
@@ -18,6 +18,6 @@ export const Thumbnail = (props) => {
 
 const mapStateToProps = (state,props) => ({...props,...state.ressources})
 
-const mapDispatchToProps = () =>{}
+const mapDispatchToProps = () =>({})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Thumbnail)
