@@ -8,7 +8,9 @@ const MemeForm = (props) => {
     <>
       {/*<div>{JSON.stringify(props)}</div>*/}
       <div data-testid="MemeForm" className={styles.MemeForm}>
-        <form>
+        <form onSubmit={(evt)=>{
+          evt.preventDefault()
+        }}>
           <h1>Titre</h1>
           <input
             type="text"
