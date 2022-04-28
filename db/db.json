@@ -38,6 +38,19 @@
       "underline": true,
       "italic": false,
       "name": "Personnage simpson"
+    },
+    {
+      "id": 3,
+      "text": "Mr Valette",
+      "x": 20,
+      "y": 20,
+      "fontSize": 20,
+      "fontWeight": "900",
+      "color": "#000000",
+      "imageId": 3,
+      "underline": true,
+      "italic": false,
+      "name": "Stars"
     }
   ],
   "images": [
@@ -61,6 +74,13 @@
       "url": "Bart_Simpsons.jpg",
       "w": 710,
       "h": 444   
+    },
+    {
+      "id": 3,
+      "name": "Valette",
+      "url": "valette.jpg",
+      "w": 1225,
+      "h": 550   
     }
   ]
 }
