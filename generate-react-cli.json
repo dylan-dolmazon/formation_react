@@ -5,50 +5,50 @@
   "testLibrary": "Testing Library",
   "component": {
     "default": {
-      "path": "src/app/component",
+      "path": "src/App/components",
       "withStyle": true,
       "withTest": true,
       "withStory": true,
       "withLazy": false
     },
     "class": {
-      "path": "src/app/component",
+      "path": "src/App/components",
       "withStyle": true,
       "withTest": true,
       "withStory": true,
       "withLazy": false,
       "customTemplates":{
-        "component": "grc/class/TemplateName.js"
+        "component":"grc/class/TemplateName.js"
       }
     },
-    "funcHook": {
-      "path": "src/app/component",
+    "funcHook":{
+      "path": "src/App/components",
       "withStyle": true,
       "withTest": true,
       "withStory": true,
       "withLazy": false,
       "customTemplates":{
-        "component": "grc/function/TemplateName.js"
+        "component":"grc/function/TemplateName.js"
       }
     },
-    "uiFunc": {
-      "path": "src/app/component/ui",
+    "uifunc":{
+      "path": "src/App/components/ui",
       "withStyle": true,
       "withTest": true,
       "withStory": true,
       "withLazy": false,
       "customTemplates":{
-        "component": "grc/function/TemplateName.js"
+        "component":"grc/function/TemplateName.js"
       }
     },
-    "layoutFunc": {
-      "path": "src/app/layout",
+    "layoutfunc":{
+      "path": "src/App/components/layout",
       "withStyle": true,
       "withTest": false,
       "withStory": false,
       "withLazy": false,
       "customTemplates":{
-        "component": "grc/layoutfunc/TemplateName.tsx"
+        "component":"grc/layoutfunc/TemplateName.tsx"
       }
     }
   }

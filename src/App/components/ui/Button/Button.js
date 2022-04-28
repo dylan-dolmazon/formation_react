@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Button = (props) => {
   const [isClicked, setClicked] = useState(false);
-  const [isHover, setOver] = useState(false);
+  const [isOver, setOver] = useState(false);
   useEffect(() => {
     console.log("updt du state", isClicked);
     if (isClicked) {
@@ -17,8 +17,8 @@ const Button = (props) => {
   let className = style.Button;
   if (isClicked) {
     className += ' ' + style.clicked;
-  } else if (isHover) {
-    className +=' ' + style["hover"];
+  } else if (isOver) {
+    className +=' ' + style["over"];
   }
   return (
     <button

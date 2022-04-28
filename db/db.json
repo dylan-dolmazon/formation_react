@@ -2,38 +2,32 @@
   "memes": [
     {
       "id": 0,
-      "text": "Le react c est cool",
+      "text": "Le react c'est cool",
       "x": 20,
       "y": 20,
-      "fonSize": 20,
+      "fontSize": 20,
       "fontWeight": "900",
-      "color": "#FFFF",
+      "color": "#000000",
       "imageId": 0,
       "underline": true,
       "italic": false,
-      "name": "mon 1ier meme"
-    },
-    {
-      "text": "Le js c est la vie",
-      "x": 20,
-      "y": 20,
-      "fonSize": 20,
-      "fontWeight": "900",
-      "color": "#FFFF",
-      "imageId": 1,
-      "underline": true,
-      "italic": false,
-      "name": "mon 1ier meme",
-      "id": 1
+      "name": "mon 1er meme"
     }
   ],
   "images": [
     {
       "id": 0,
       "name": "image",
-      "url": "kb9.jpg",
-      "w": 710,
-      "h": 444
+      "url": "futurama1.jpg",
+      "w": 1200,
+      "h": 675
+    },
+    {
+      "id": 1,
+      "name": "image",
+      "url": "Bart_Simpsons.jpg",
+      "w": 972,
+      "h": 720
     }
   ]
 }

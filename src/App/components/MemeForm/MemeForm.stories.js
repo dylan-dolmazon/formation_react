@@ -1,5 +1,5 @@
 /* eslint-disable */
-import MemeForm from './MemeForm(1)';
+import MemeForm from './MemeForm';
 
 export default {
   title: "MemeForm",

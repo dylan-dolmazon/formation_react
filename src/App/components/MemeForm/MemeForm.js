@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../Button/button";
+import Button from "../ui/Button/Button";
 import styles from "./MemeForm.module.scss";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const MemeForm = (props) => {
   return (
@@ -15,8 +15,8 @@ const MemeForm = (props) => {
             id="f_titre"
             placeholder="saisir titre"
             value={props.meme.name}
-            onChange={(evt)=>{
-              props.onFormChange({ ...props.meme, name: evt.target.value})
+            onChange={(evt) => {
+              props.onFormChange({ ...props.meme, name: evt.target.value });
             }}
           />
           <hr />
@@ -29,8 +29,8 @@ const MemeForm = (props) => {
           <input
             type="text"
             value={props.meme.text}
-            onChange={(evt)=>{
-              props.onFormChange({ ...props.meme, text: evt.target.value})
+            onChange={(evt) => {
+              props.onFormChange({ ...props.meme, text: evt.target.value });
             }}
           />
           <div className={styles.half}>
@@ -41,44 +41,42 @@ const MemeForm = (props) => {
                 type="number"
                 className={styles.smallInput}
                 value={props.meme.x}
-                onChange={(evt)=>{
-                props.onFormChange({ ...props.meme, x: evt.target.value})
-            }}
+                onChange={(evt) => {
+                  props.onFormChange({ ...props.meme, x: evt.target.value });
+                }}
               />
             </div>
             <div>
               <label htmlFor="f_y">y:</label>
               <br />
-              <input 
-                type="number" 
-                className={styles.smallInput} 
-                value={props.meme.y} 
+              <input
+                type="number"
+                className={styles.smallInput}
+                value={props.meme.y}
+                onChange={(evt) => {
+                  props.onFormChange({ ...props.meme, y: evt.target.value });
+                }}
               />
             </div>
           </div>
           <hr />
           <label htmlFor="f_color">Couleur</label>
-          <input 
-            type="color" 
-            id="f_color" 
-            value={props.meme.color} 
-            onChange={(evt)=>{
-              props.onFormChange({ ...props.meme, color: evt.target.value})
-            }}
-            />
+          <input type="color" id="f_color" value={props.meme.color} onChange={(evt) => {
+              props.onFormChange({ ...props.meme, color: evt.target.value });
+            }} />
           <div className={styles.half}>
             <div>
               <label htmlFor="f_sz">font-size:</label>
               <br />
-              <input 
-                type="number" 
-                className={styles.smallInput} 
-                value={props.meme.fontSize} 
-                min={0} 
-                onChange={(evt)=>{
-                  props.onFormChange({ ...props.meme, fontSize: parseInt(evt.target.value)})
+              <input
+                type="number"
+                className={styles.smallInput}
+                value={props.meme.fontSize}
+                min={0}
+                onChange={(evt) => {
+                  props.onFormChange({ ...props.meme, fontSize: evt.target.value });
                 }}
-                />
+              />
             </div>
             <div>
               <label htmlFor="f_fw">font-weight:</label>
@@ -90,8 +88,8 @@ const MemeForm = (props) => {
                 step="100"
                 max="900"
                 value={props.meme.fontWeight}
-                onChange={(evt)=>{
-                  props.onFormChange({ ...props.meme, fontWeight: parseInt(evt.target.value)})
+                onChange={(evt) => {
+                  props.onFormChange({ ...props.meme, fontWeight: evt.target.value });
                 }}
               />
             </div>
@@ -100,31 +98,35 @@ const MemeForm = (props) => {
             <div>
               <label htmlFor="f_underline">underline:</label>
               <br />
-              <input 
-                id="f_underline" 
-                type="checkbox" 
-                checked={props.meme.underline} 
-                onChange={(evt)=>{
-                  props.onFormChange({ ...props.meme, underline: evt.target.checked})
+              <input
+                id="f_underline"
+                type="checkbox"
+                checked={props.meme.underline}
+                onChange={(evt) => {
+                  props.onFormChange({ ...props.meme, underline: evt.target.checked });
                 }}
-                />
+              />
             </div>
             <div>
               <label htmlFor="f_italic">italic:</label>
               <br />
-              <input 
-                id="f_italic" 
-                type="checkbox" 
-                checked={props.meme.italic} 
-                onChange={(evt)=>{
-                  props.onFormChange({ ...props.meme, italic: evt.target.checked})
+              <input
+                id="f_italic"
+                type="checkbox"
+                checked={props.meme.italic}
+                onChange={(evt) => {
+                  props.onFormChange({ ...props.meme, italic: evt.target.checked });
                 }}
-                />
+              />
             </div>
           </div>
           <div className={styles.half}>
-            <Button type="submit" bgColor="skyblue">Enregistrer</Button>
-            <Button type="reset" bgColor="tomato">Annuler</Button>
+            <Button type="submit" bgColor="skyblue">
+              Enregistrer
+            </Button>
+            <Button type="reset" bgColor="tomato">
+              Annuler
+            </Button>
           </div>
         </form>
       </div>
@@ -135,5 +137,5 @@ MemeForm.propTypes = {
   meme: PropTypes.object.isRequired,
   images: PropTypes.array.isRequired,
   onFormChange: PropTypes.func.isRequired,
-}
+};
 export default MemeForm;
