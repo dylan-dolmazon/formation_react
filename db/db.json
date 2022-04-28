@@ -17,14 +17,14 @@
   "images": [
     {
       "id": 0,
-      "name": "image",
+      "name": "futurama",
       "url": "futurama1.jpg",
       "w": 1200,
       "h": 675
     },
     {
       "id": 1,
-      "name": "image",
+      "name": "bart",
       "url": "Bart_Simpsons.jpg",
       "w": 972,
       "h": 720
