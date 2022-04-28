@@ -5,6 +5,9 @@ import MemeForm from "./components/MemeForm/MemeForm";
 import MemeSvgViewer from "./components/ui/MemeSvgViewer/MemeSvgViewer";
 import Navbar from "./components/ui/Navbar/Navbar";
 import { REST_ADR, REST_RESSOURCES } from "./config/config";
+import store from './store/store'
+
+
 const appInitialState = {
   meme: {
     text: "Le react c'est cool",
