@@ -2,7 +2,7 @@
   "memes": [
     {
       "id": 0,
-      "text": "Le react c'est cool",
+      "text": "Les meilleurs joueurs du monde",
       "x": 20,
       "y": 20,
       "fontSize": 20,
@@ -11,23 +11,23 @@
       "imageId": 0,
       "underline": true,
       "italic": false,
-      "name": "mon 1er meme"
+      "name": "Classement fr"
     }
   ],
   "images": [
     {
       "id": 0,
-      "name": "futurama",
-      "url": "futurama1.jpg",
-      "w": 1200,
-      "h": 675
+      "name": "Benzema",
+      "url": "kb9.jpg",
+      "w": 710,
+      "h": 444
     },
     {
       "id": 1,
-      "name": "bart",
-      "url": "Bart_Simpsons.jpg",
-      "w": 972,
-      "h": 720
+      "name": "Mbappe",
+      "url": "mbappe.jpg",
+      "w": 710,
+      "h": 444   
     }
   ]
 }
