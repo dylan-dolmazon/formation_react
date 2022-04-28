@@ -2,7 +2,7 @@
   "memes": [
     {
       "id": 0,
-      "text": "Les meilleurs joueurs du monde",
+      "text": "Karim BENZEMA",
       "x": 20,
       "y": 20,
       "fontSize": 20,
@@ -11,7 +11,33 @@
       "imageId": 0,
       "underline": true,
       "italic": false,
-      "name": "Classement fr"
+      "name": "joueur de foot"
+    },
+    {
+      "id": 1,
+      "text": "Killian MBAPPE",
+      "x": 20,
+      "y": 20,
+      "fontSize": 20,
+      "fontWeight": "900",
+      "color": "#000000",
+      "imageId": 1,
+      "underline": true,
+      "italic": false,
+      "name": "Joueur de foot"
+    },
+    {
+      "id": 2,
+      "text": "Bart SIMPSON",
+      "x": 20,
+      "y": 20,
+      "fontSize": 20,
+      "fontWeight": "900",
+      "color": "#000000",
+      "imageId": 2,
+      "underline": true,
+      "italic": false,
+      "name": "Personnage simpson"
     }
   ],
   "images": [
@@ -26,6 +52,13 @@
       "id": 1,
       "name": "Mbappe",
       "url": "mbappe.jpg",
+      "w": 710,
+      "h": 444   
+    },
+    {
+      "id": 2,
+      "name": "Bart",
+      "url": "Bart_Simpsons.jpg",
       "w": 710,
       "h": 444   
     }
