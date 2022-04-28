@@ -80,6 +80,8 @@ store.subscribe(()=>{
 
 export default store
 
+store.dispatch({type:'INIT'})
+
 /*
 store.dispatch({type:ACTIONS_CURRENT.UPDATE_CURRENT, value:{imageId:1,color:'blue'}})
 store.dispatch({type:ACTIONS_CURRENT.CLEAR_CURRENT})

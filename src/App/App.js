@@ -27,20 +27,14 @@ const appInitialState = {
 let isloaded=false;
 
 function App(props) {
-  const [state, setstate] = useState(appInitialState);
-
   return (
     <div className="App" style={{ height: "90vh" }}>
       <div>Header</div>
       <Navbar />
       <FlexH>
         <FlexW>
-          <MemeSvgViewer
-            image={state.images.find((img) => img.id === state.meme.imageId)}
-          />
-          <ConnectedMemeForm
-            images={state.images}
-          />
+          <MemeSvgViewer/>
+          <ConnectedMemeForm/>
         </FlexW>
       </FlexH>
       <div>Footer</div>

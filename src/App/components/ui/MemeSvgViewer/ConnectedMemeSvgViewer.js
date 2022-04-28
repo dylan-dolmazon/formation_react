@@ -6,6 +6,7 @@ function mstp(s,p){
     return{
         ...p,
         meme:s.current,
+        image: s.ressources.images.find(img=>img.id === s.current.imageId)
     }
 }
 

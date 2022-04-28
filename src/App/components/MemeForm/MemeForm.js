@@ -160,6 +160,7 @@ function mapStateToProps(state,ownProps){
   return {
     ...ownProps,
     meme:state.current,
+    images: state.ressources.images
   }
 }
 
