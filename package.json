@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "layout-cmp": "npx generate-react-cli c --type=layoutfunc",
-    "json": "json-server -p 5679 db/db.json"
+    "json": "json-server -p 5679 db/db.json",
+    "runAll": "npm run json | npm start"
   },
   "eslintConfig": {
     "extends": [

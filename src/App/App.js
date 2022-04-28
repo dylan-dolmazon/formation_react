@@ -30,6 +30,9 @@ function App(props) {
   const [state, setstate] = useState(appInitialState);
   useEffect(() => {
     if(isloaded){return}
+
+    
+
     isloaded=true;
     const promiseMemes = fetch(`${REST_ADR}${REST_RESSOURCES.MEMES}`, {
       headers: { Accept: "application/json" },

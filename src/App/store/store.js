@@ -28,14 +28,19 @@ function currentReducer(state=initialCurrentMeme,action){
         default: return state
     }
 }
+
 const store=createStore(currentReducer)
 store.subscribe(()=>{
-    console.log(store.getState());
+    console.trace(store.getState());
 })
+
+export default store
 
 store.dispatch({type:ACTIONS_CURRENT.UPDATE_CURRENT, value:{imageId:1,color:'blue'}})
 store.dispatch({type:ACTIONS_CURRENT.CLEAR_CURRENT})
 store.dispatch({type:ACTIONS_CURRENT.UPDATE_CURRENT, value:{text:'hello',imageId:1,color:'tomato'}})
+
+
 
 /*
 let state= currentReducer(undefined,{type:'init '})
