@@ -24,7 +24,6 @@ const appInitialState = {
   images: [],
   memes: [],
 };
-let isloaded=false;
 
 function App(props) {
   return (
