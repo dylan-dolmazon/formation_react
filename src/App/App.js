@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import FlexH from "./components/layout/FlexH/FlexH";
 import FlexW from "./components/layout/FlexW/FlexW";
-import MemeForm from "./components/MemeForm/MemeForm";
+import {ConnectedMemeForm} from "./components/MemeForm/MemeForm";
 import MemeSvgViewer from "./components/ui/MemeSvgViewer/MemeSvgViewer";
 import Navbar from "./components/ui/Navbar/Navbar";
 import { REST_ADR, REST_RESSOURCES } from "./config/config";
@@ -58,7 +58,7 @@ function App(props) {
 
   return (
     <div className="App" style={{ height: "90vh" }}>
-      <div>Header</div>:{}
+      <div>Header</div>
       <Navbar />
       <FlexH>
         <FlexW>
@@ -66,12 +66,8 @@ function App(props) {
             meme={state.meme}
             image={state.images.find((img) => img.id === state.meme.imageId)}
           />
-          <MemeForm
-            meme={state.meme}
+          <ConnectedMemeForm
             images={state.images}
-            onFormChange={(newMeme) => {
-              setstate({ ...state, meme: newMeme });
-            }}
           />
         </FlexW>
       </FlexH>

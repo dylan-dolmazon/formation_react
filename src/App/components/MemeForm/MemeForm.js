@@ -171,4 +171,4 @@ function mapDispatchToProps(dispatch){
   }
 }
 
-export const connectedMemeForm = connect(mapStateToProps,mapDispatchToProps)(MemeForm)
+export const ConnectedMemeForm = connect(mapStateToProps,mapDispatchToProps)(MemeForm)
