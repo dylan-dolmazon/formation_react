@@ -159,7 +159,7 @@ export default MemeForm;
 function mapStateToProps(state,ownProps){
   return {
     ...ownProps,
-    meme:state,
+    meme:state.current,
   }
 }
 

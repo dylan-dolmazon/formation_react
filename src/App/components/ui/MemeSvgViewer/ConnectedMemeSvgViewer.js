@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 function mstp(s,p){
     return{
         ...p,
-        meme:s,
+        meme:s.current,
     }
 }
 

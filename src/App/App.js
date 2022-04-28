@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import FlexH from "./components/layout/FlexH/FlexH";
 import FlexW from "./components/layout/FlexW/FlexW";
 import {ConnectedMemeForm} from "./components/MemeForm/MemeForm";
@@ -28,33 +28,6 @@ let isloaded=false;
 
 function App(props) {
   const [state, setstate] = useState(appInitialState);
-  useEffect(() => {
-    if(isloaded){return}
-
-    
-
-    isloaded=true;
-    const promiseMemes = fetch(`${REST_ADR}${REST_RESSOURCES.MEMES}`, {
-      headers: { Accept: "application/json" },
-      method: "GET",
-    }).then((f) => {
-      console.log(f);
-      return f.json();
-    });
-    const promiseImage = fetch(`${REST_ADR}${REST_RESSOURCES.IMAGES}`).then(
-      (f) => {
-        console.log(f);
-        return f.json();
-      }
-    );
-    Promise.all([promiseImage, promiseMemes]).then((tab_promiseObject) => {
-      setstate({
-        ...state,
-        images: tab_promiseObject[0],
-        memes: tab_promiseObject[1],
-      });
-    });
-  }, []);
 
   return (
     <div className="App" style={{ height: "90vh" }}>
