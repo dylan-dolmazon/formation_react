@@ -11,7 +11,6 @@ function App(props) {
   return (
     <div className="App" style={{ height: "90vh" }}>
       <Router>
-        <div><Link to="/thumbnail">Thumbnail |</Link><Link to="/editor"> editor</Link></div>
         <Navbar />
         <FlexH>
           <Routes>
@@ -20,12 +19,7 @@ function App(props) {
             />
             <Route 
               path="/editor" 
-              element={
-                <FlexW>
-                  <MemeSvgViewer/>
-                  <ConnectedMemeForm/>
-                </FlexW>
-              } 
+              element={<MemeEditor/>} 
             />
           </Routes>
         </FlexH>
@@ -33,6 +27,15 @@ function App(props) {
       </Router>
     </div>
   );
+}
+
+function MemeEditor(){
+  return (
+    <FlexW>
+      <MemeSvgViewer/>
+      <ConnectedMemeForm/>
+    </FlexW>
+  )
 }
 
 export default App;

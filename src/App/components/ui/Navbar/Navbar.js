@@ -9,14 +9,20 @@ const Navbar = (props) => {
       <NavBar bg="primary" variant="dark">
         <Container>
         <LinkContainer to="/">
-              <NavBar.Brand>Navbar</NavBar.Brand>
+              <NavBar.Brand>MemeGenerator.react</NavBar.Brand>
             </LinkContainer>
           <Nav className="me-auto">
+          <LinkContainer to="/">
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
             <LinkContainer to="/thumbnail">
               <Nav.Link>Thumbnail</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/editor">
               <Nav.Link>Editor</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/editor/1">
+              <Nav.Link>Edit 1</Nav.Link>
             </LinkContainer>
           </Nav>
         </Container>
