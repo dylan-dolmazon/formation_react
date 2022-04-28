@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import FlexH from "./components/layout/FlexH/FlexH";
 import FlexW from "./components/layout/FlexW/FlexW";
 import {ConnectedMemeForm} from "./components/MemeForm/MemeForm";
-import MemeSvgViewer from "./components/ui/MemeSvgViewer/MemeSvgViewer";
+import MemeSvgViewer from "./components/ui/MemeSvgViewer/ConnectedMemeSvgViewer";
 import Navbar from "./components/ui/Navbar/Navbar";
 import { REST_ADR, REST_RESSOURCES } from "./config/config";
 import store from './store/store'
@@ -63,7 +63,6 @@ function App(props) {
       <FlexH>
         <FlexW>
           <MemeSvgViewer
-            meme={state.meme}
             image={state.images.find((img) => img.id === state.meme.imageId)}
           />
           <ConnectedMemeForm

@@ -29,7 +29,7 @@ function currentReducer(state=initialCurrentMeme,action){
     }
 }
 
-const store=createStore(currentReducer)
+const store=createStore(currentReducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 store.subscribe(()=>{
     //m'informe lorsque qlq accéde au store
     //console.trace(store.getState());
